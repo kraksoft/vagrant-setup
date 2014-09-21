@@ -1,0 +1,32 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+personalization = File.expand_path("../Personalization", __FILE__)
+load personalization
+
+# Vagrantfile API/syntax version. Don't touch unless you know what you're doing!
+VAGRANTFILE_API_VERSION = "2"
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+    config.vm.box = $box
+
+    config.vm.box_url = $box_url
+
+    config.vm.host_name = $host_name
+
+    config.vm.network :private_network, ip: $network_ip
+
+    config.vm.synced_folder "..", "/vagrant", :nfs => $use_nfs
+
+    config.ssh.forward_agent = true
+
+    # config.vm.network :forwarded_port, host: 8888, guest: 80
+
+    config.vm.provider :virtualbox do |vb|
+        # vb.gui = true
+        vb.customize ["modifyvm", :id, "--memory", "1024"]
+        vb.customize ["modifyvm", :id, "--cpus", "2"]
+        vb.customize ["modifyvm", :id, "--nictype1", "82543GC"]
+        vb.customize ["modifyvm", :id, "--nictype2", "82540EM"]
+    end
+end

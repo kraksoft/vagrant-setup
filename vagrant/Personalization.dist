@@ -1,0 +1,15 @@
+# Name of the vhost to create
+$host_name = "xxx.dev.lan"
+
+# VM IP
+$network_ip = "192.168.50.100"
+
+# Use NFS?
+$use_nfs = true
+
+# Box name
+#$box = "trusty-server-cloudimg-amd64"
+$box = "debian-wheezy-64"
+
+# Box url
+$box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box"
