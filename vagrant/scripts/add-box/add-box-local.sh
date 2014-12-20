@@ -1,3 +1,3 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 vagrant box add trusty-server-cloudimg-amd64 trusty-server-cloudimg-amd64-vagrant-disk1.box
