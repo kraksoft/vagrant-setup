@@ -1,3 +1,3 @@
 #!/bin/bash
 
-vagrant box add trusty-server-cloudimg-amd64 https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-amd64-vagrant-disk1.box
+vagrant box add debian-7.7.0-amd64 https://github.com/kraksoft/vagrant-box-debian/releases/download/7.7.0/debian-7.7.0-amd64.box
