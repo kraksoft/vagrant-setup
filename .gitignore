@@ -11,8 +11,3 @@ _darcs
 # Junk
 .DS_Store
 Thumbs.db
-
-
-# Vagrant
-/vagrant/.vagrant
-/vagrant/Personalization
