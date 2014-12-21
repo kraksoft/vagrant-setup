@@ -3,4 +3,4 @@
 # Configurations
 DISTRIBUTION="linux-fedora"
 
-./install-sudoers.sh ${DISTRIBUTION}
+./config-sudoers.sh ${DISTRIBUTION}

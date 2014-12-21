@@ -3,4 +3,4 @@
 # Configurations
 DISTRIBUTION="linux-ubuntu"
 
-./install-sudoers.sh ${DISTRIBUTION}
+./config-sudoers.sh ${DISTRIBUTION}

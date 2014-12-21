@@ -3,4 +3,4 @@
 # Configurations
 DISTRIBUTION="osx"
 
-./install-sudoers.sh ${DISTRIBUTION}
+./config-sudoers.sh ${DISTRIBUTION}
