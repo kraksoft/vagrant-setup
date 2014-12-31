@@ -1,7 +1,7 @@
 Vagrant setup
 =============
 
-The main goal of this repository is to provide simple Vagrant setup. 
+This repository provide simple Vagrant setup. 
 
 This repository contain scripts for:
 - adding box: local and remote
