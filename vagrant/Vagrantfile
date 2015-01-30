@@ -20,6 +20,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     config.ssh.forward_agent = true
 
+    config.ssh.insert_key = false
+
     # config.vm.network :forwarded_port, host: 8888, guest: 80
 
     config.vm.provider :virtualbox do |vb|
