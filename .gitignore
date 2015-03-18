@@ -11,3 +11,6 @@ _darcs
 # Junk
 .DS_Store
 Thumbs.db
+
+# PhpStorm
+.idea
